@@ -1,0 +1,29 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Friend List</h1>
+
+<table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Email</th>
+      <th>Phone</th>
+      <th>Github</th>
+      <th></th>
+    </tr>
+  </thead>
+
+<tbody>
+  <% @friends.each do |friend| %>
+    <tr>
+      <th><%= friend.first_name %>
+      <th><%= friend.last_name %>
+      <th><%= friend.email %>
+      <th><%= friend.phone %>
+      <th><%= friend.github %>
+    </tr>
+  <% end %>
+</tbody>
+</table>
+<%= link_to "New friend", new_friend_path %>
