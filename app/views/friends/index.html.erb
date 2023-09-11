@@ -5,23 +5,23 @@
 <table class="table">
   <thead class="thead-dark">
     <tr>
-      <th>First Name</th>
-      <th>Last Name</th>
-      <th>Email</th>
-      <th>Phone</th>
-      <th>Github</th>
-      <th></th>
+      <th scope="col">First Name</th>
+      <th scope="col">Last Name</th>
+      <th scope="col">Email</th>
+      <th scope="col">Phone</th>
+      <th scope="col">Github</th>
+      <th scope="col"></th>
     </tr>
   </thead>
 
 <tbody>
   <% @friends.each do |friend| %>
     <tr>
-      <th><%= friend.first_name %>
-      <th><%= friend.last_name %>
-      <th><%= friend.email %>
-      <th><%= friend.phone %>
-      <th><%= friend.github %>
+      <td><%= friend.first_name %></td>
+      <td><%= friend.last_name %></td>
+      <td><%= friend.email %></td>
+      <td><%= friend.phone %></td>
+      <td><%= friend.github %></td>
     </tr>
   <% end %>
 </tbody>
